@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test for Flexion</title>
+    <link href="quizitems.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="lib/json2.js"></script>
+    <script src="lib/jquery-1.5.js"></script>
+    <script src="lib/underscore-1.1.6.js"></script>
+    <script src="lib/backbone.js"></script>
+    <script src="lib/backbone-localstorage.js"></script>
+    <script src="quizitems.js"></script>
+  </head>
+
+  <body>
+    <div id="quizitemapp">
+      <div class="title">
+        <h1>Test</h1>
+      </div>
+      <div class="content">
+        <div id="quizitems">
+          <ul id="quizitem-list"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- Templates -->
+    <script type="text/template" id="item-template">
+         <div class="display">
+             <div class="quizitem-question"><%= question %></div>
+             <div class="quizitem-answer"><%= answer %></div>
+             <div class="quizitem-correctanswer">Correct Answer: <%= correctanswer %> </div>
+         </div>
+        <div class="edit">
+            <div class="quizitem-question"><%= question %></div>
+            <label>True <input class="quizitem-input" type="radio" name="quizitem-input-<%= id %>"  value="true"  <%= answer===true ? 'checked="checked"' : '' %> /></label>
+            <label>False <input class="quizitem-input" type="radio" name="quizitem-input-<%= id %>"  value="false" <%= answer===true ? 'checked="checked"' : '' %> /></label>
+        </div>
+      </div>
+    </script>
+  </body>
+</html>
