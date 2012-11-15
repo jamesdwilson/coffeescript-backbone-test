@@ -1,13 +1,3 @@
-# An example Backbone application contributed by
-# [Jérôme Gravel-Niquet](http://jgn.me/). This demo uses a simple
-# [LocalStorage adapter](backbone-localstorage.html)
-# to persist Backbone models within your browser.
-# 
-# This [CoffeeScript](http://jashkenas.github.com/coffee-script/) variation has been provided by [Jason Giedymin](http://jasongiedymin.com/).
-#
-# Note: two things you will notice with my CoffeeScript are that I prefer to
-# use four space indents and prefer to use `()` for all functions.
-
 # Load the application once the DOM is ready, using a `jQuery.ready` shortcut.
 $ ->
   ### QuizItem Model ###
